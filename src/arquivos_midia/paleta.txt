@@ -1,0 +1,6 @@
+branco florescer : #fdfaf5
+
+tons azuis: #b0daff, #ddeffb, #f5f9fc ,#21bffe
+tons rosas: #f4bed8, #e9aec4, #ff8dd5
+
+tom cinza : #1b1c31
