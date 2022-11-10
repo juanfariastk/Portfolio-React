@@ -43,7 +43,7 @@ nav.navbar{
 
 nav.navbar.scrolled{
   padding: 0px 0;
-  background-color: #f1efeb ;
+  background-color: #f1f1f1 ;
 }
 
 nav.navbar a.navbar-brand{
@@ -228,6 +228,54 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .wrap {
   border-right: 0.04em solid rgb(114, 114, 114);
+}
+
+/* Habilidades */
+
+.habilidade{
+  padding: 0 0 50px 0;
+  position: relative;
+}
+
+.box-habilidades{
+  background: #fffdfb;
+  border-radius: 65px;
+  text-align: center;
+  padding: 62px 50px ;
+  margin-top: -65px;
+  box-shadow: 2px 13px 20px 0px rgba(81, 84, 109, 0.13);
+}
+
+.habilidade h2{
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.habilidade p{
+  color: #23243b;
+  font-size: 19px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
+}
+
+.habilidades-carrossel{
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.habilidades-carrossel .item img{
+  width: 50%;
+  margin: 0 auto 15px auto;
+}
+
+.background-esq-hab{
+  top:28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
 }
 
 /* default do react */
