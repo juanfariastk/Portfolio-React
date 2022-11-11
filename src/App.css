@@ -5,6 +5,18 @@
   font-weight: 700;
 }
 
+@font-face {
+  font-family:'Montserrat', sans-serif;
+  src: url('./arquivos_midia/fonte/Montserrat-VariableFont_wght.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family:'Montserrat', sans-serif;
+  src: url('./arquivos_midia/fonte/Montserrat-VariableFont_wght.ttf');
+  font-weight: 400;
+}
+
 /* Para Min em 1600px */
 *{
   margin:0;
@@ -169,7 +181,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner{
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 260px 0 90px 0;
   background-image: url('./arquivos_midia/imagens/background-blossom.png');
   background-position: top center;
   background-size: cover;
@@ -243,7 +255,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   padding: 62px 50px ;
   margin-top: -65px;
-  box-shadow: 2px 13px 20px 0px rgba(81, 84, 109, 0.13);
+  box-shadow: 2px 13px 20px 0px rgba(85, 87, 110, 0.082);
 }
 
 .habilidade h2{
@@ -274,9 +286,148 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   top:28%;
   position: absolute;
   bottom: 0;
-  width: 40%;
+  width: 25%;
+  left: 0;
+  z-index: -4;
+  opacity: 45%;
+}
+
+
+/* projetos */
+
+.projeto{
+  padding: 82px 0;
+  position: relative;
+  background-color:  #f3f0ed;
+}
+
+.projeto h2{
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.projeto p{
+  color:#23243b;
+  font-size: 19px;
+  letter-spacing: 0.8px;
+}
+
+.projeto .nav.nav-pills{
+  width: 73%;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color:  #fffdfb;
+}
+
+.projeto .nav.nav-pills .nav-item{
+  width: 50%;
+}
+
+.projeto .nav.nav-pills .nav-link{
+  background-color: transparent;
+  border-radius: 0;
+  padding: 17px 0;
+  width: 100%;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3 ease-in-out;
+  text-align: center;
+  z-index: 0;
+  color: #1b1c31;
+}
+
+.projeto .nav.nav-pills .nav-link::before{
+  border-radius: 50px !important;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90.21deg,   #9accf7 -5.91%, #f8aad0 111.58%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.5s ease;
+}
+
+.projeto .nav.nav-pills .nav-link.active::before{
+  width: 100% !important;
+}
+
+.projeto .nav.nav-pills .nav-link.active {
+  color: white;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 1);
+  text-shadow: 1px 1px 10px rgba(41, 40, 61, 0.411);
+}
+
+.nav-link#projetos-abas-tab-primeiro{
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 55px 0px 0px 55px;
+}
+
+.nav-link#projetos-abas-tab-segundo{
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 55px 55px 0;
+}
+
+.projetos-imagens{
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  transition: all 350ms ease-in-out;
+}
+
+
+.proj-zoom-out:hover{
+  
+  transform: scale(1.25);
+  box-shadow: 1px 1px 10px rgba(41, 40, 61, 0.411);
+  z-index: 1;
+}
+
+.projetos-texto{
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+
+.projetos-imagens:hover .projetos-texto{
+  top: 80%;
+  opacity: 1;
+}
+
+.projetos-texto h4{
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+
+.projetos-texto span{
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+}
+
+.background-dir-proj{
+  top: 20%;
+  position: absolute;
+  bottom: 0;
+  width: 35%;
+  right: 0;
   z-index: -4;
 }
+
 
 /* default do react */
 

@@ -1,11 +1,12 @@
 import { Col, Row, Container } from "react-bootstrap"
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
+
 import hab_90 from "../arquivos_midia/imagens/hab-90.png"
 import hab_75 from "../arquivos_midia/imagens/hab-75.png"
 import hab_45 from "../arquivos_midia/imagens/hab-45.png"
 import light_blossom from "../arquivos_midia/imagens/light_blossom.png"
-import light_blossom2 from "../arquivos_midia/imagens/light_blossom2.png"
+
 
 export const Habilidades = () => {
     const responsive = {
@@ -67,7 +68,7 @@ export const Habilidades = () => {
                     </Col>
                 </Row>
             </Container>
-            <img className="backgroung-esq-hab" src={light_blossom}></img>
+            <img className="background-esq-hab" src={light_blossom}></img>
         </section>
     )
 }
