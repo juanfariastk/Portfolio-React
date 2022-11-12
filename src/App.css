@@ -17,6 +17,15 @@
   font-weight: 400;
 }
 
+/* remover bordas */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+button {
+  border: 0;
+  background-color: transparent;
+}
+
 /* Para Min em 1600px */
 *{
   margin:0;
@@ -428,6 +437,86 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+/* Form Contato */
+
+.contato{
+  background:  linear-gradient(90.21deg, #f3f0ed -5.91%, #eb92df1e 111.58%);;
+  padding: 60px 0 200px 0;
+}
+
+.contato img{
+  width: 92%;
+}
+
+.contato h2{
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.contato form input, .contato form textarea{
+  width: 100%;
+  background: rgba(255, 255, 255, 0.842);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+
+.contato form input:focus, .contato form textarea:focus {
+  background: rgba(205, 222, 252, 0.603);
+  
+}
+
+.contato form input::placeholder, .contato form textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contato form input:focus::placeholder, .contato form textarea:focus::placeholder {
+  opacity: 0.8;
+}
+
+.contato form button {
+  font-weight: 700;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 25px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.contato form button span {
+  z-index: 1;
+  position: relative;
+}
+
+.contato form button:hover {
+  color: white;
+}
+
+.contato form button::before {
+  border-radius: 28px;
+  content: "";
+  background: #121212;
+  width: 28%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.contato form button:hover::before {
+  width: 100% !important;
+}
 
 /* default do react */
 

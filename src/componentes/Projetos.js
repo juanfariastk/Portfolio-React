@@ -26,6 +26,16 @@ export const Projetos = () => {
             nome:"projeto - 4",
             descricao:"desc projeto 4",
             img: img_proj1
+        },
+        {
+            nome:"projeto - 5",
+            descricao:"desc projeto 5",
+            img: img_proj1
+        },
+        {
+            nome:"projeto - 6",
+            descricao:"desc projeto 6",
+            img: img_proj1
         }
     ]
 
@@ -59,7 +69,7 @@ export const Projetos = () => {
                                 </Tab.Pane>
                                 
                                 <Tab.Pane eventKey="segundo">
-                                    Testeeeeee asdalkdasdljkasdlkasdljpkasdljk
+                                    Area indefinida
                                 </Tab.Pane>
 
                             </Tab.Content>
