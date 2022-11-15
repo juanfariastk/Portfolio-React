@@ -58,10 +58,10 @@ export const Contato = () =>{
                         <h2> Entre em contato!</h2>
                         <form onSubmit={enviar}>
                             <Row>
-                                <Col size={12} sm={6} className="px-1"> <input type="text" value={novo_dados.primeiro_nome} placeholder="Primeiro Nome" onChange={(i) => atualizar_form('primeiro_nome', i.target.value)}></input> </Col>
-                                <Col size={12} sm={6} className="px-1"> <input type="text" value={novo_dados.sobrenome} placeholder="Sobrenome" onChange={(i) => atualizar_form('sobrenome', i.target.value)}></input> </Col>
-                                <Col size={12} sm={6} className="px-1"> <input type="email" value={novo_dados.email} placeholder="Email" onChange={(i) => atualizar_form('email', i.target.value)}></input> </Col>
-                                <Col size={12} sm={6} className="px-1"> <input type="tel" value={novo_dados.telefone} placeholder="Telefone" onChange={(i) => atualizar_form('telefone', i.target.value)}></input> </Col>
+                                <Col size={12} sm={6} className="px-1"> <input type="text" value={novo_dados.primeiro_nome} placeholder="Primeiro Nome" pattern="\b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+" onChange={(i) => atualizar_form('primeiro_nome', i.target.value)}></input> </Col>
+                                <Col size={12} sm={6} className="px-1"> <input type="text" value={novo_dados.sobrenome} placeholder="Sobrenome" pattern="\b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+" onChange={(i) => atualizar_form('sobrenome', i.target.value)}></input> </Col>
+                                <Col size={12} sm={6} className="px-1"> <input type="email" value={novo_dados.email} placeholder="Email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"  onChange={(i) => atualizar_form('email', i.target.value)}></input> </Col>
+                                <Col size={12} sm={6} className="px-1"> <input type="tel" value={novo_dados.telefone} placeholder="Telefone" pattern="^\(?\d{2}\)?[\s-]?[\s9]?\d{4}-?\d{4}$" onChange={(i) => atualizar_form('telefone', i.target.value)}></input> </Col>
                                 <Col> <textarea row="6" value= {novo_dados.mensagem} placeholder="Digite sua mensagem" onChange={(i) => atualizar_form('mensagem', i.target.value)}></textarea> <button type="submit" disabled={status_desativa}> <span>{botao_enviar}</span> </button> </Col>
                             </Row>
                         </form>

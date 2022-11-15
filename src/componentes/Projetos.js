@@ -2,7 +2,7 @@ import { Container, Row, Tab, Col, Nav} from "react-bootstrap"
 import { Cards } from "./Cards"
 
 import img_proj1 from "../arquivos_midia/imagens/teste_proj.png"
-import light_blossom2 from "../arquivos_midia/imagens/light_blossom2.png"
+//import light_blossom2 from "../arquivos_midia/imagens/light_blossom2.png"
 
 export const Projetos = () => {
 
@@ -77,7 +77,7 @@ export const Projetos = () => {
                     </Col>
                 </Row>
             </Container>
-            <img className="background-dir-proj" src={light_blossom2}></img>
+
         </section>
     )
 }

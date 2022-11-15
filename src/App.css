@@ -518,6 +518,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100% !important;
 }
 
+/* Footer dos cria*/
+
+.rodape{
+  background-image: url('./arquivos_midia/imagens/bg-fim.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.rodape img{
+  width: 12%;
+  transition: 0.3s ease-in-out;
+}
+
+.rodape img:hover{
+  transform: scale(0.9, 0.9);
+}
+
 /* default do react */
 
 .App {
