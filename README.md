@@ -1,5 +1,5 @@
-# Portfolio React
-![image](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) 
+# Portfolio React ![image](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) 
+
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/juanfariastk/Portfolio-React?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/juanfariastk/Portfolio-React?style=for-the-badge)
