@@ -1,8 +1,10 @@
-import {useState, useEffect} from "react"
+import {useState, useEffect, useRef} from "react"
 import { Col, Container, Row } from "react-bootstrap"
+//import {gsap} from "gsap"
 import yone_banner from "../arquivos_midia/imagens/yone_banner.png"
 
 export const BannerInicial = () => {
+
     const [loop_items, set_loop] = useState(0)
     const [deleta_estado, set_delete]=  useState(false)
 
@@ -39,15 +41,15 @@ export const BannerInicial = () => {
         }
     }
     return (
-        <section className="banner" id="home">
+        <section className="banner" id="home" >
             <Container>
                 <Row className="align-items-center">
-                    <Col xs={12}  md={6} xl={7}>
+                    <Col xs={12}  md={6} xl={7} >
                         <span className="tagline">Seja Bem-Vindo ao meu Mundo!</span>
                         <h1>{`Olá! Me chamo Juan `}<span className="wrap">{texto_atual}</span></h1>
                         <p>Desça e conheça um pouco mais sobre os meus projetos...</p>
                     </Col>
-                    <Col xs={12} md={6} xl={5}>
+                    <Col xs={12} md={6} xl={5} >
                         <img src={yone_banner} alt="banner_inicio"/>
                     </Col>
                 </Row>
