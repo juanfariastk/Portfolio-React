@@ -407,6 +407,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  color:white;
+  text-shadow: 1px 2px 8px black;
 }
 
 .projetos-imagens:hover .projetos-texto{
@@ -423,7 +425,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .projetos-texto span{
   font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 15px;
   letter-spacing: 0.8px;
 }
