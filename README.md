@@ -11,9 +11,9 @@
 ##Requisitos do projeto:
 
 - [x] Geração dinâmica
-- [x] Uso Api Fetch 
+- [x] Uso Api Fetch (Envio de E-Mail com NodeMailer)
 - [x] RegExp
-- [x] Bibliotecas Usadas (React-Boostrap | NodeMailer | React-Multi-Carousel | React-Reveal)
+- [x] Bibliotecas Usadas (React-Boostrap | React-Multi-Carousel | React-Reveal)
 - [x] 🌹
 ##
 ![image](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) 
